@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root,
+:root::before,
+student {
+  display: block
+}
+
+:root {
+  margin: 0 auto;
+  width: 900px;
+  font: 200 16px 'Open Sans', sans-serif;
+}
+
+:root::before {
+  content: 'Student Directory';
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 24px 0;
+  margin-bottom: 8px;
+}
+
+student {
+  margin: 24px 0;
+}
+
+student::before {
+  content: 'Student ID: ' attr(studentID);
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+first-name,
+middle-name,
+last-name,
+preferred-name {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+preferred-name::before {
+  content: '"';
+}
+
+preferred-name::after {
+  content: '"';
+}
+
+email,
+phone,
+academic-status,
+gpa,
+major,
+minor,
+enrollment-status,
+advisor,
+initial-enrollment-date,
+graduation-date {
+  display: block;
+}
+
+email::before {
+  content: 'Email: ';
+  font-weight: 500;
+}
+
+phone::before {
+  content: 'Phone: ';
+  font-weight: 500;
+}
+
+academic-status::before {
+  content: 'Year: ';
+  font-weight: 500;
+}
+
+gpa::before {
+  content: 'GPA: ';
+  font-weight: 500;
+}
+
+major::before {
+  content: 'Major: ';
+  font-weight: 500;
+}
+
+minor::before {
+  content: 'Minor: ';
+  font-weight: 500;
+}
+
+enrollment-status::before {
+  content: 'Enrollment: ';
+  font-weight: 500;
+}
+
+advisor::before {
+  content: 'Advisor: ';
+  font-weight: 500;
+}
+
+initial-enrollment-date::before {
+  content: 'Start Date: ';
+  font-weight: 500;
+}
+
+graduation-date::before {
+  content: 'Graduation Date: ';
+  font-weight: 500;
+}

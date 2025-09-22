@@ -1,0 +1,34 @@
+<!-- =====================================================================================================
+  The root element: students
+
+  The students container (root) element must contain one or more student elements. This is represented by the + metacharacter. One is required, but there is no limit to how many are allowed.
+
+  Note: This element may not contain parsed character data (PCDATA) that includes entities, or simple character data (CDATA).
+  ==================================================================================================== -->
+<!ELEMENT student-directory (student)+>
+
+<!-- =====================================================================================================
+  The student container element must contain all specified elements. The middle-name and preferred-name elements have the ? metacharacter, representing that each may appear zero or one time.
+  ==================================================================================================== -->
+<!ELEMENT student (first-name, middle-name?, last-name, preferred-name?, email, phone, academic-status, gpa, major, minor, enrollment-status, advisor, initial-enrollment-date, graduation-date)>
+
+<!-- =====================================================================================================
+  All elements contained in student are defined here.
+  ==================================================================================================== -->
+<!ELEMENT first-name (#PCDATA)>
+<!ELEMENT middle-name (#PCDATA)>
+<!ELEMENT last-name (#PCDATA)>
+<!ELEMENT preferred-name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT academic-status (#PCDATA)>
+<!ELEMENT gpa (#PCDATA)>
+<!ELEMENT major (#PCDATA)>
+<!ELEMENT minor (#PCDATA)>
+<!ELEMENT enrollment-status (#PCDATA)>
+<!ELEMENT advisor (#PCDATA)>
+<!ELEMENT initial-enrollment-date (#PCDATA)>
+<!ELEMENT graduation-date (#PCDATA)>
+
+<!ATTLIST student
+          studentID CDATA #REQUIRED>
