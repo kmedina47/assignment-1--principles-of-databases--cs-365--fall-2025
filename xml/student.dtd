@@ -1,5 +1,5 @@
 <!-- =====================================================================================================
-  The root element: students
+  The root element: student-directory
 
   The students container (root) element must contain one or more student elements. This is represented by the + metacharacter. One is required, but there is no limit to how many are allowed.
 
